@@ -172,42 +172,90 @@
 
 Так для создания заголовков использовался символ # (количество символов # определяет уровень заголовка). 
 
-<p align="center"><img src=""></p>
+<p align="center"><img src="https://github.com/Arina0000000/LR6_PB/blob/report/Screenshots_LR6/headings.png"></p>
 <p align="center">Рисунок 24 - Создание заголовков</p></br>
 
 Для создания "жирного текста" необходимо выделить текст двойными звездочками или двойными подчеркиваниями (в данной работе использовались **).
 
-<p align="center"><img src=""></p>
+<p align="center"><img src="https://github.com/Arina0000000/LR6_PB/blob/report/Screenshots_LR6/big%20letter.png"></p>
 <p align="center">Рисунок 25 - Создание жирного текста</p></br>
 
 Нумерованные списки были созданы при помощи чисел, за которыми следует точка, а маркированы списки были созданы при помощи символов *, - или +.
 
-<p align="center"><img src=""></p>
+<p align="center"><img src="https://github.com/Arina0000000/LR6_PB/blob/report/Screenshots_LR6/lists.png"></p>
 <p align="center">Рисунок 26 - Создание нумерованных и маркированных списков</p></br>
 
 Также в данной работе была создана ссылка на изображение при помощи использования квадратных и круглых скобок. Изображения добавляются аналогично ссылкам с одним отличием: добавляется восклицательный знаком перед квадратнвми скобками. Но в данной работе изображение добавляется иным способом.
 
-<p align="center"><img src=""></p>
+<p align="center"><img src="https://github.com/Arina0000000/LR6_PB/blob/report/Screenshots_LR6/link.png"></p>
 <p align="center">Рисунок 27 - Создание ссылки</p></br>
 
 Так как в Markdown можно использовать HTML-элементы для добавления дополнительных стилей и элементов, недоступных в стандартном наборе языка разметки Markdown. При выполнении лабораторной работы №6 использовался HTML-элемента `<img>`, который размещен внутри элемента `<p>`, выравнивающего изображение по центру с помощью атрибута `align="center"`, а атрибут `src` указывает URL изображения, хранящегося в отдельной папке в ветке report. 
 
 Аналагично были выравнены подписи к рисункам: элемент HTML `<p>` и атрибут `align="center"` создают абзац текста, в котором указанный текст выравнивается по центру, а завершает абзац элемент <br>, которой добавляет разрыв строки.
 
-<p align="center"><img src=""></p>
+<p align="center"><img src="https://github.com/Arina0000000/LR6_PB/blob/report/Screenshots_LR6/center.png"></p>
 <p align="center">Рисунок 28 - Созданные HTML-элементы</p></br>
 
 Для создания цитаты используется символ `>`, а для выделения однострочного кода используются обратные кавычки (`).
 
-<p align="center"><img src=""></p>
+<p align="center"><img src="https://github.com/Arina0000000/LR6_PB/blob/report/Screenshots_LR6/quote.png"></p>
 <p align="center">Рисунок 29 - Созданная цитата</p></br>
 
 Также в отчёте используются оповещения (расширение Markdown на основе синтаксиса blockquote, который можно использовать для выделения критически важных сведений) для выделения важной и дополняющей основной текст информации.
 Для создания таких оповещений используется специальная строка blockquote, указывающая тип оповещения, а затем сведения об оповещении в стандартном блоквоте.
 
-<p align="center"><img src=""></p>
+<p align="center"><img src="https://github.com/Arina0000000/LR6_PB/blob/report/Screenshots_LR6/warnings.png"></p>
 <p align="center">Рисунок 30 - Созданное оповещение</p></br>
 
+## Лог команд
+```
+git config --global user.name "4315 Гуляева А.Д"
+git config --global user.email "gulikaari@mail.ru"
+git config --global --list 
+git clone https://github.com/Arina0000000/LR6_PB
+cd ~/LR6_PB
+git pull   
+git log master
+gitk --all
+git show branch1  
+git checkout branch1   
+git log branch1
+git show branch1
+git checkout master   
+git merge branch1
+git status
+notepad mergefile.txt
+git add mergefile.txt
+git status
+git commit -m "Branches successfully connected (conflict resolved)"
+git branch -d branch1
+git branch   
+echo "Была сделана первая запись" >> changes.txt 
+git add changes.txt  
+cat changes.txt
+git status
+git commit -m "Добавлено первое изменение" 
+echo "Была сделана вторая запись" >> changes_2.txt
+git add changes_2.txt
+cat changes_2.txt
+git status
+git commit -m "Добавлено второе изменение"
+echo "Была изменена вторая запись" > changes_2.txt
+git add changes_2.txt
+cat changes_2.txt
+git status
+git commit -m "Добавлено третье изменение"
+git reset HEAD~1
+git log -3
+git reset HEAD~1
+git log -3
+git branch report
+git branch
+git push
+git push origin report
+git push origin master --delete branch1 - допущенна ошибка. Должно быть написано: git push origin --delete branch1
+```
 
 
 
